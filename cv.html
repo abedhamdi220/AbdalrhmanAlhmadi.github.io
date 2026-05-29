@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdalrhman Alhmadi - Clear ATS Resume</title>
+    <style>
+        /* 
+         * Enhanced ATS & Human-Readable Styling 
+         * Focuses on visual hierarchy, clear spacing, and precise alignment.
+         */
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #222222;
+            background: #ffffff;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Header / Contact Info */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #000000;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #444444;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            font-size: 10.5pt;
+            color: #333333;
+        }
+        
+        .contact-info span {
+            margin: 0 5px;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #000000;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        /* General Text */
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* Skills Layout - Flex for better ATS parsing and human readability */
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .skill-line {
+            display: flex;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            width: 220px; /* Fixed width for alignment */
+            flex-shrink: 0;
+        }
+
+        .skill-items {
+            flex-grow: 1;
+        }
+
+        /* Experience / Education Headers */
+        .entry {
+            margin-bottom: 20px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .date {
+            font-weight: bold;
+            color: #333333;
+            white-space: nowrap;
+        }
+
+        .company {
+            font-size: 11pt;
+            font-style: italic;
+            color: #444444;
+            margin-bottom: 6px;
+        }
+
+        /* Bullet Points */
+        ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+
+        /* Highlight Key Metrics */
+        .highlight {
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abdalrhman Alhmadi</h1>
+        <div class="subtitle">Software Engineer | Backend Developer</div>
+        <div class="contact-info">
+            hminabd71@gmail.com <span>|</span> Damascus, Syria <br>
+            linkedin.com/in/abdalrhman-hmadi-901b94384 <span>|</span> github.com/abedhamdi220
+        </div>
+    </header>
+
+    <h2>Professional Summary</h2>
+    <p>Detail-oriented Backend Developer and third-year Informatics student at the International University for Science and Technology. Passionate about web development and building scalable, secure, and robust architectures using Laravel and PHP. Proficient in Event-Driven Architecture and advanced Design Patterns. Experienced in integrating relational databases with MongoDB and deploying Python/FastAPI AI services. Eager to continuously learn, collaborate on real-world projects, and engineer long-term solutions while consistently writing high-performance, clean code.</p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skill-line">
+            <span class="skill-category">Backend & Frameworks:</span>
+            <span class="skill-items">Laravel, PHP, RESTful APIs, Python, FastAPI</span>
+        </div>
+        <div class="skill-line">
+            <span class="skill-category">Frontend & Core Tools:</span>
+            <span class="skill-items">React.js (Basic Knowledge), HTML5, CSS, Bootstrap, Git, GitHub, Debugging, Firebase (Basic Knowledge)</span>
+        </div>
+        <div class="skill-line">
+            <span class="skill-category">Architecture & Patterns:</span>
+            <span class="skill-items">Microservices, Event-Driven Architecture, Strategy Pattern, Service-Repository Pattern</span>
+        </div>
+        <div class="skill-line">
+            <span class="skill-category">Databases & Ops:</span>
+            <span class="skill-items">MySQL, MongoDB (Basic Knowledge), System Deployment (Basic Knowledge)</span>
+        </div>
+    </div>
+
+    <h2>Engineering Projects & Experience</h2>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="job-title">Backend Developer</span>
+            <span class="date">2026</span>
+        </div>
+        <div class="company">Styloraify (AI-Powered E-Commerce Platform)</div>
+        <ul>
+            <li>Engineered a custom route to programmatically clear cache, successfully resolving Laravel and MongoDB integration and authentication failures on a shared hosting environment.</li>
+            <li>Refactored the authentication system and User Data Model to natively support MongoDB's string-based '_id' structure, preventing server crashes during JWT token generation.</li>
+            <li>Achieved <span class="highlight">100% deployment stability</span> for the AI generation engine by directly embedding custom Python/FastAPI source code into the infrastructure.</li>
+            <li>Implemented the Service-Repository pattern to maintain clean code separation and secure sensitive API keys.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="job-title">Backend Engineer</span>
+            <span class="date">2026</span>
+        </div>
+        <div class="company">Advanced E-Commerce System</div>
+        <ul>
+            <li>Implemented the Strategy Design Pattern to manage multiple payment gateways, eliminating complex nested conditional statements and ensuring high scalability for future integrations.</li>
+            <li>Architected a granular Role-Based Access Control (RBAC) permissions system, strictly isolating data access between distinct administrative roles (Finance, Orders, Support).</li>
+            <li>Optimized system performance using Event-Driven Architecture; configured Events and Listeners to asynchronously dispatch Firebase and WhatsApp notifications upon order updates.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="job-title">Backend Developer</span>
+            <span class="date">2025 – 2026</span>
+        </div>
+        <div class="company">Additional Projects (Real-Time & Integration)</div>
+        <ul>
+            <li>Developed "Laravel-RealTime", a broadcasting-based backend environment ensuring low-latency, real-time data streaming and synchronization.</li>
+            <li>Engineered secure backend APIs specifically optimized for React Single Page Applications (SPA), effectively resolving Cross-Origin Resource Sharing (CORS) limitations.</li>
+        </ul>
+    </div>
+
+    <h2>Education & Certifications</h2>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="job-title">Bachelor in Informatics (Third-Year Student)</span>
+            <span class="date">Jun 2023 – Present</span>
+        </div>
+        <div class="company">International University for Science and Technology</div>
+        <ul>
+            <li>Relevant Coursework: Web Development fundamentals, Microprocessor Architecture (Intel 8085/8086), Low-level Assembly Language programming, Memory Paging, and advanced Data Structures (Graph Theory).</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="job-title">Intensive Backend Development with Laravel Program (110 Hours)</span>
+            <span class="date">March 2026</span>
+        </div>
+        <div class="company">Tamkeen (Empowering the Syrian Programmer)</div>
+        <ul>
+            <li><span class="highlight">Final Project Score: 95/100.</span></li>
+            <li>Received a formal Letter of Recommendation commending strong technical execution, structured architecture, problem-solving mindset, and the ability to write secure, high-performance code.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
